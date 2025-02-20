@@ -11,5 +11,5 @@ The detailed instructions are listed in the `instructions` directory:
 
 0. [Prerequisites](./instructions/0-Prerequisites.md)
 0. [Choose a Role](./instructions/1-Roles.md)
-0. [Project setup](./instructions/2-Setup.md) (only for the captain!)
+0. [Project setup](./instructions/2-Setup.md)
 0. [Exercise A](./instructions/3-Exercise-A.md)
