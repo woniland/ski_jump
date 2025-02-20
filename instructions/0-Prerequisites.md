@@ -11,7 +11,7 @@ We will be using two main programs, which may be already familiar to some of you
 While `git` is the actual program, which is doing all the heavy lifting, we will use [GitHub](https://github.com/)
 as the online interface to collaborate together. GitHub is one popular choice out of many, which can host online repositories.
 
-If you have never used `git` before, consider to configure account:
+If you have never used `git` before, consider to configure your account:
 ```sh
 $ git config --global user.name "Your Name Comes Here"
 $ git config --global user.email you@yourdomain.example.com

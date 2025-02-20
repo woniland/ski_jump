@@ -7,6 +7,6 @@ physicists are hired outside academia.
 1. CEO: They will be responsible for the project management, the infrastructure, code reviews, representation to the outside,
    and code documentation. One member of the CEO group is the team captain, who will be responsible for the repository of the team.
    This role might have the smallest amount of hard Python coding, but it requires the full overview on what is happening.
-1. Programmer: They will be responsible for the actual implementation of the program and they will need to prove, that what they are
+1. Programmer: They will be responsible for the actual implementation of the program and they will need to prove that what they are
    doing makes sense.
 1. Engineer: They will be responsible for using the developed tools in the correct way in order to solve the actual exercises.
