@@ -1,7 +1,7 @@
 ### Setup
 
 You need your own version of this repository, where you can actually change the content as much as you like and which is not bound to me.
-Choose one team captain, who will be responsible for the repository of the team. The captain (and only them) need to execute the following steps:
+The captain (and only them) need to execute the following steps:
  
 1. Create a new repository in GitHub under your account.
    Choose a meaningful name and description, else you can keep the repository completely empty - we will import some content next.
