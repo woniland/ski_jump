@@ -1,5 +1,5 @@
-# TOPI git template
-Template repository for TOPI retreat 2025.
+# ToPi git template
+Template repository for ToPi retreat 2025.
 
 Indico: https://indico.global/event/13854/overview
 
