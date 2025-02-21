@@ -3,6 +3,9 @@
 from dataclasses import dataclass
 import pathlib
 
+EARTH_GRAVITY = 1.0
+"""Acceleration on earth due to gravity."""
+
 
 @dataclass(frozen=True)
 class Hill:
