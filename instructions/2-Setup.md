@@ -13,9 +13,12 @@ The captain (and only them) need to execute the following steps:
 
 Then everybody needs to clone _your_ repository.
 
-When a group implements a new feature always create a new branch, e.g. `git switch -c my-new-branch`.
+When a group implements a new feature always create a new branch, e.g. via `git switch -c my-new-branch`.
+Remember that there will be three groups changing the repository in parallel - you can solve this by using branches.
 Don't put too many changes into a single branch, before asking to merge it to the main branch.
 Try to make one consistent change, adding one specific new feature into one branch.
+When you believe your feature is ready, create a Pull Request and ask for a review by the CEO
+(and the CEO should ask to one or both other groups).
 
 Before you start to develop Python code, make a new virtual environment, e.g. with `python -m venv env`.
 Next, you need to activate the new environment via `. env/bin/activate`.
