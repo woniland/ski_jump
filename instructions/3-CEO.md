@@ -84,3 +84,31 @@ should include (at least) the standard white-space hooks and black.
 
 Implement this feature through a Pull Request and tell your collaborators this way what they should do and how they can activate
 it on their machines.
+
+### GitHub Actions
+
+We want to further automatize things, that _should_ be run all the time but which people might forget.
+This concept is called Continuous Integration (CI) and the implementation in GitHub is called
+[GitHub Actions](https://docs.github.com/en/actions).
+
+Take a look to the official tutorial: https://docs.github.com/en/actions/writing-workflows/quickstart
+
+One prominent case of a task which should be run in the CI and our example case here is
+[Unit testing](https://en.wikipedia.org/wiki/Unit_testing).
+
+Note the difference between pre-commit (discussed above) and the CI:
+- pre-commit is installed locally on every machine vs. the CI is run centrally by GitHub
+- pre-commit is run on every commit vs. the CI can be triggered on a wide variety of events (including every commit)
+- pre-commit is used mostly for basic code tasks (e.g. static code analysis, formatting, white space control) vs.
+  the CI may contain complex tasks (using nested instructions or external resources)
+- pre-commit should terminate in O(seconds) vs. the CI may take minutes or even hours (Note that GitHub has a time limit)
+- pre-commit can run in the CI: https://pre-commit.ci/
+
+**Step 3**: Write a CI script for unit testing.
+
+The machines standing behind the GitHub Actions are just bare machines, so we need to tell them everything
+that is needed to run our checks. So, the CI script should look like this:
+1. Checkout the repository: [actions/checkout@v4](https://github.com/marketplace/actions/checkout)
+1. Install Python: [actions/setup-python@v5](https://github.com/marketplace/actions/setup-python)
+1. Install the dependencies that you need for your project
+1. Run the unit test using `pytest`
