@@ -15,7 +15,16 @@ and its associated unit tests into one branch.
 
 You will start to work on the `src/generate.py` file - take a look there!
 
-**Step 1:** Complete the implementation for the `SkiJump` class.
+**Step 1:** Complete the implementation of `SkiJump.y`, `SkiJump.from_json_file`,
+and `SkiJump.landing`.
+
+_Hints:_
+- for `SkiJump.y`: it is $y(x) = a*x + b*x^2$ - determine $a,b$ from the
+  initial velocity and angle! (Yes, this is a math exercise :books: )
+- for `SkiJump.from_json_file`: use [`json.load`](https://docs.python.org/3/library/json.html#json.load)
+- for `SkiJump.landing`: More math!
+
+We will leave `SkiJump.sample` for step 3.
 
 ### Unit testing
 
@@ -53,7 +62,7 @@ To execute the generation script execute
 $ python src/generate.py
 ```
 
-**Step 3:** Complete the dataset generation script in `src/generate.py`.
+**Step 3:** Complete the implementation of `SkiJump.sample` and the dataset generation script in `src/generate.py`.
 
 Generate some new theories, then generate a new dataset (from that), and then put them into
 the `data/` folder for the Engineer.
