@@ -1,4 +1,4 @@
-### Roles
+## Roles
 
 Each team will be subdivided into three different groups, which cover different aspects of a project - which
 may be a physics or a non-physics (but e.g. industry) project. The group names may give an idea on why

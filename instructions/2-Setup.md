@@ -1,4 +1,4 @@
-### Setup
+## Setup
 
 You need your own version of this repository, where you can actually change the content as much as you like (and which is not bound to me).
 

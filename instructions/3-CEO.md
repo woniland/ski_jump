@@ -10,7 +10,7 @@ For every Pull Request check that the contribution
 - does not contain trivial typos
 - is sufficiently documented
 
-**Step 1**: Open three Issues to track the status of the three groups in Exercise A.
+**Step 1:** Open three Issues to track the status of the three groups in Exercise A.
 
 It often makes sense to annotate the respective Pull Request behind a completed task,
 e.g. `- [ ] task 1` -> `- [x] task 1 #2`.
@@ -79,7 +79,7 @@ contribute to the repository. We can do so by using the [hooks](https://git-scm.
 which `git` provides and specifically there is a convenient python library for precisely that purpose:
 [pre-commit](https://pre-commit.com/).
 
-**Step 2**: Add a pre-commit configuration using the [Quick Start instructions](https://pre-commit.com/#installation) which
+**Step 2:** Add a pre-commit configuration using the [Quick Start instructions](https://pre-commit.com/#installation) which
 should include (at least) the standard white-space hooks and black.
 
 Implement this feature through a Pull Request and tell your collaborators this way what they should do and how they can activate
@@ -104,7 +104,7 @@ Note the difference between pre-commit (discussed above) and the CI:
 - pre-commit should terminate in O(seconds) vs. the CI may take minutes or even hours (Note that GitHub has a time limit)
 - pre-commit can run in the CI: https://pre-commit.ci/
 
-**Step 3**: Write a CI script for unit testing.
+**Step 3:** Write a CI script for unit testing.
 
 The machines standing behind the GitHub Actions are just bare machines, so we need to tell them everything
 that is needed to run our checks. So, the CI script should look like this:

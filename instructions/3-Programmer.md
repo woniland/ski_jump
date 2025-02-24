@@ -6,9 +6,16 @@ By chance, the laws will be similar to our own universe, but we will not tell th
 fact to the engineer. In order to generate these dataset we develop a set of tools,
 which we can then execute.
 
+
+_Hint_: It often makes sense to do the implementation and the unit test in parallel.
+This way it could e.g. make sense to just put the implementation of the trajectory
+and its associated unit tests into one branch.
+
 ### Implementation
 
 You will start to work on the `src/generate.py` file - take a look there!
+
+**Step 1:** Complete the implementation for the `SkiJump` class.
 
 ### Unit testing
 
@@ -36,6 +43,8 @@ Execute the already available unit test via
 $ pytest tests/
 ```
 
+**Step 2:** Check your implementation using the available unit tests and write the missing ones.
+
 ### Data generation
 
 Finally, we have all tools at hand to write the actual datafile.
@@ -44,11 +53,7 @@ To execute the generation script execute
 $ python src/generate.py
 ```
 
-### Action plan
+**Step 3:** Complete the dataset generation script in `src/generate.py`.
 
-1. Complete the implementation for the `SkiJump` class.
-1. Check your implementation using the available unit tests and write the missing ones.
-1. Complete the dataset generation script in `src/generate.py`.
-
-_Hint_: It often makes sense to do Step 1 & 2 in parallel.
-This way it could e.g. make sense to just put the implementation of the trajectory into one branch.
+Generate some new theories, then generate a new dataset (from that), and then put them into
+the `data/` folder for the Engineer.

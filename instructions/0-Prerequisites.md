@@ -1,7 +1,7 @@
-### Prerequisites
+## Prerequisites
 We will be using two main programs, which may be already familiar to some of you.
 
-#### Git
+### Git
 
 - Website: https://git-scm.com/
 - Documentation: https://git-scm.com/doc
@@ -17,7 +17,7 @@ $ git config --global user.name "Your Name Comes Here"
 $ git config --global user.email you@yourdomain.example.com
 ```
 
-#### Python
+### Python
 
 - Website: https://www.python.org/
 - Documentation: https://docs.python.org/3/
