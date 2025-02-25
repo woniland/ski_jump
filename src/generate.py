@@ -53,15 +53,18 @@ class SkiJump:
 
     def y(self, x: float) -> float:
         """Return the trajectory."""
+        # Work here in Step 1!
         raise NotImplementedError()
 
     @classmethod
     def from_json_file(cls, path: pathlib.Path):
         """Read configuration from JSON file."""
+        # Work here in Step 1!
         raise NotImplementedError()
 
     def landing(self, hill: Hill) -> float:
         """Returns the intersection of the trajectory and the hill."""
+        # Work here in Step 1!
         raise NotImplementedError()
 
     def sample(self, hill: Hill, n: int) -> tuple[np.ndarray, np.ndarray]:
@@ -81,8 +84,9 @@ class SkiJump:
             ys :
                 y points
         """
+        # Work here in Step 3!
         # 1. Compute the landing point
-        # 2. Generate `args.n` equally space x points between the landing point and 0. using
+        # 2. Generate `n` equally space x points between the landing point and 0. using
         #    [`numpy.linspace`](https://numpy.org/doc/stable/reference/generated/numpy.linspace.html#numpy-linspace)
         xs = np.array([])
         # 3. Compute the trajectory for each x point
