@@ -112,5 +112,5 @@ The machines standing behind the GitHub Actions are just bare machines, so we ne
 that is needed to run our checks. So, the CI script should look like this:
 1. Checkout the repository: [actions/checkout@v4](https://github.com/marketplace/actions/checkout)
 1. Install Python: [actions/setup-python@v5](https://github.com/marketplace/actions/setup-python)
-1. Install the dependencies that you need for your project
-1. Run the unit test using `pytest`
+1. Install the dependencies that you need for your project (remember the [Setup](./2-Setup.md) instructions)
+1. Run the unit test using `$ pytest tests/`
