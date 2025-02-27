@@ -2,7 +2,7 @@
 
 In the following we will assume that the uncertainty will be a linear function in $x$.
 More mathematically speaking we assume that a data point $y_j$ is given by
-$$y_j = y(x_j) + N(\mu=0, x \cdot \tau^2)$$
+$$y_j = y(x_j) + N(\mu=0, (x \cdot \tau)^2)$$
 where $N(\mu,\sigma^2)$ is the [Gaussian normal distribution](https://en.wikipedia.org/wiki/Normal_distribution)
 centered around the mean $\mu$ and with standard deviation $\sigma$.
 
