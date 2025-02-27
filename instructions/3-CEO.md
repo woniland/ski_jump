@@ -13,7 +13,7 @@ For every Pull Request check that the contribution
 **Step 1:** Open three Issues to track the status of the three groups in Exercise A.
 
 It often makes sense to annotate the respective Pull Request behind a completed task,
-e.g. `- [ ] task 1` -> `- [x] task 1 #2`.
+e.g. `- [ ] task 1` -> `- [x] task 1 #123`.
 
 #### CEO Issue
 
@@ -35,6 +35,7 @@ Description:
 - [ ] complete `SkiJump`
 - [ ] unit test all methods
 - [ ] complete data generation
+- [ ] can reproduce `data/A-test.txt`
 ```
 
 #### Engineer Issue
@@ -45,6 +46,7 @@ Description:
 ```
 - [ ] can fit template data
 - [ ] plot fit comparing to data
+- [ ] can reproduce values in `config/A-test.json`
 ```
 
 ### Code formatting

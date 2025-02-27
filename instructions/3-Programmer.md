@@ -2,12 +2,11 @@
 
 Your main task will be to provide the dataset - i.e. the starting point for the Engineer.
 We will do so by inventing our own universe in which we dictate the laws of physics.
-By chance, the laws will be similar to our own universe, but we will not tell this
-fact to the engineer. In order to generate these dataset we develop a set of tools,
+In order to generate these dataset we develop a set of tools,
 which we can then execute.
 
-_Hint_: It often makes sense to do the implementation and the unit test in parallel.
-This way it could e.g. make sense to just put the implementation of the trajectory
+_Hint_: It often makes sense to do the implementation (Step 1) and the unit test (Step 2) in parallel.
+This way it could, e.g., make sense to just put the implementation of the trajectory
 and its associated unit tests into one branch.
 
 You will work on the `src/generate.py` file - take a look there!
@@ -63,5 +62,10 @@ $ python src/generate.py
 
 **Step 3:** Complete the implementation of `SkiJump.sample` and the dataset generation script in `src/generate.py`.
 
-Generate some new theories, then generate a new dataset (from that), and then put them into
+Check that `config/A-test.json` reproduces `data/A-test.txt` when running
+```sh
+$ python src/generate.py config/A-test.json data/A-test.txt -n 3
+```
+
+Generate some new theories (in `config/`), then generate a new dataset (from that), and then put them into
 the `data/` folder for the Engineer.

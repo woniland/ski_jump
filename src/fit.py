@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.optimize import curve_fit
 
-# Step 1: Determine the starting velocity and starting angle of the test dataset `data/test.txt`.
+# Step 1: Determine the starting velocity and starting angle of the test dataset `data/A-test.txt`.
 
 ## 1. Load data file using https://numpy.org/doc/stable/reference/generated/numpy.loadtxt.html#numpy-loadtxt .
 ##    The first column corresponds to the abscissa x and the second column to the ordinate y.

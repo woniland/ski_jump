@@ -11,13 +11,15 @@ We _assume_ the dataset describes a ski jump under the influence of gravity.
 If we can setup a model, which reflects this assumption, and we can fit this model,
 we can be confident that is was a normal ski jump after all.
 
-**Step 1:** Determine the starting velocity and starting angle of the test dataset `data/test.txt`.
+**Step 1:** Determine the starting velocity and starting angle of the test dataset `data/A-test.txt`.
 
 1. Read the input data from file
 1. Define the model: $y(x;a,b) = a*x + b*x^2$ (as you know: with gravity object fly like parabolas)
 1. Fit the model parameters $a,b$ to the data using
    [scipy.optimize.curve_fit](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html#curve-fit)
 1. Find the transformation from $a,b$ to the initial velocity and initial angle
+
+Check that the model parameters of `data/A-test.txt` match to `config/A-test.json`.
 
 ### Plotting
 
