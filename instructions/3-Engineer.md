@@ -14,7 +14,7 @@ we can be confident that is was a normal ski jump after all.
 **Step 1:** Determine the starting velocity and starting angle of the test dataset `data/A-test.txt`.
 
 1. Read the input data from file
-1. Define the model: $y(x;a,b) = a*x + b*x^2$ (as you know: with gravity object fly like parabolas)
+1. Define the model: $y(x;a,b) = a*x + b*x^2$ (as you know: with gravity objects fly like parabolas and we start at the origin)
 1. Fit the model parameters $a,b$ to the data using
    [scipy.optimize.curve_fit](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html#curve-fit)
 1. Find the transformation from $a,b$ to the initial velocity and initial angle

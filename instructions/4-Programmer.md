@@ -41,7 +41,11 @@ Summary: always set a seed when testing random numbers.
 
 **Step 3:** Generate new datasets.
 
-The data generation procedure should be unaffected since we only changed the internals of `SkiJump.sample`.
+The data generation procedure itself may (or may not) need to be slightly changed, since `SkiJump.sample` now also needs to give the uncertainty.
+Surely, you need to adjust the file dumping since now we want to add as a third column the respective uncertainty.
+
+Check that you can process `config/B-test.json`. Note that this will _NOT_ reproduce `data/B-test.txt` as this was generated with
+a special seed (I'm joking :upside_down_face: I faked it).
 
 Also generate multiple datasets from a single configuration.
 
