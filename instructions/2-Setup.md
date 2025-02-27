@@ -18,9 +18,10 @@ Remember that there will be three groups changing the repository in parallel - y
 Don't put too many changes into a single branch, before asking to merge it to the main branch.
 Try to make one consistent change, adding one specific new feature into one branch.
 When you believe your feature is ready, create a Pull Request and ask for a review by the CEO
-(and the CEO should ask to one or both other groups).
+(and the CEO should ask to one or both other groups for their Pull Requests).
 
 Before you start to develop Python code, make a new virtual environment, e.g. with `python -m venv env`.
 Next, you need to activate the new environment via `. env/bin/activate`.
 This new environment makes the development independent from the host system, gives full control over
 program versions and better reproducibility.
+Indeed, then next in line we can install the necessary third-party libraries using `pip install -r requirements.txt`

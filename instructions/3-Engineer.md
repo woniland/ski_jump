@@ -3,6 +3,8 @@
 Your main task will to do the actual fitting, based on the datasets provided
 by the Programmer.
 
+You will work on the `src/fit.py` file - take a look there!
+
 ### Fitting
 
 We _assume_ the dataset describes a ski jump under the influence of gravity.
@@ -26,3 +28,10 @@ Next, we want to check if the fit actually makes sense.
 _Hint:_ Recall that the data points are just points, but the model is a smooth function.
 
 For a small number of model parameters it often makes sense to print them in the plot.
+
+### Code organization
+
+Can you organize your code in such a way that Step 1 and Step 2 are _independent_ from each other?
+This would make sense as they are indeed two orthogonal things: Step 1 is doing the actual physics,
+but Step 2 is just one possible way to use the result and specifically one out of many ways to present
+the result in a reader-friendly way.

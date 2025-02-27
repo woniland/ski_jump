@@ -9,7 +9,7 @@ from scipy.optimize import curve_fit
 ## 1. Load data file using https://numpy.org/doc/stable/reference/generated/numpy.loadtxt.html#numpy-loadtxt .
 ##    The first column corresponds to the abscissa x and the second column to the ordinate y.
 
-## 2. Define model: Look to the example on SciPy (the link below)
+## 2. Define the model: Look to the example on SciPy (the link below)
 
 ## 3. Fit using https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html#curve-fit
 

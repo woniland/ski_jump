@@ -10,9 +10,9 @@ _Hint_: It often makes sense to do the implementation and the unit test in paral
 This way it could e.g. make sense to just put the implementation of the trajectory
 and its associated unit tests into one branch.
 
-### Implementation
+You will work on the `src/generate.py` file - take a look there!
 
-You will start to work on the `src/generate.py` file - take a look there!
+### Implementation
 
 **Step 1:** Complete the implementation of `SkiJump.y`, `SkiJump.from_json_file`,
 and `SkiJump.landing`.

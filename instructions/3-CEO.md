@@ -34,7 +34,7 @@ Description:
 ```
 - [ ] complete `SkiJump`
 - [ ] unit test all methods
-- [ ] data generation
+- [ ] complete data generation
 ```
 
 #### Engineer Issue
@@ -80,7 +80,7 @@ which `git` provides and specifically there is a convenient python library for p
 [pre-commit](https://pre-commit.com/).
 
 **Step 2:** Add a pre-commit configuration using the [Quick Start instructions](https://pre-commit.com/#installation) which
-should include (at least) the standard white-space hooks and black.
+should include (at least) the standard white-space hooks and `black`.
 
 Implement this feature through a Pull Request and tell your collaborators this way what they should do and how they can activate
 it on their machines.
