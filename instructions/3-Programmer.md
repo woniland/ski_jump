@@ -7,7 +7,8 @@ which we can then execute.
 
 _Hint_: It often makes sense to do the implementation (Step 1) and the unit test (Step 2) in parallel.
 This way it could, e.g., make sense to just put the implementation of the trajectory
-and its associated unit tests into one branch.
+and its associated unit tests into one branch. Next, you could, e.g., put the file reading
+and its associated unit tests into one branch, etc.
 
 You will work on the `src/generate.py` file - take a look there!
 
@@ -28,12 +29,12 @@ We will leave `SkiJump.sample` for step 3.
 
 Next, we want to check if the implementation is actually correct - we can do this
 by using the concept of [Unit testing](https://en.wikipedia.org/wiki/Unit_testing).
-Unit test execute a small piece of code in fully controlled environment and check if it
+Unit test execute a small piece of code in a fully controlled environment and check if it
 fulfills the expectations.
 
 - If a code does not pass the unit tests there is no hope it will work in real life
-- Unit tests should be a small, independent piece of logic
-- Unit tests should be executed regularly, e.g. on every commit
+- Unit tests should test a small, independent piece of logic
+- Unit tests should be executed regularly, e.g. on every commit (in the CI)
 - Unit tests often check invariants or symmetries of your code
 
 The most popular unit test framework for Python is [pytest](https://docs.pytest.org/en/stable/).
@@ -41,10 +42,6 @@ The most popular unit test framework for Python is [pytest](https://docs.pytest.
 Take a look to the `tests/test_generate.py` file!
 By convention unit test files start with `test_`and also unit test functions start with `test_`.
 
-Install the package via
-```sh
-$ pip install pytest
-```
 Execute the already available unit test via
 ```sh
 $ pytest tests/
@@ -67,5 +64,5 @@ Check that `config/A-test.json` reproduces `data/A-test.txt` when running
 $ python src/generate.py config/A-test.json data/A-test.txt -n 3
 ```
 
-Generate some new theories (in `config/`), then generate a new dataset (from that), and then put them into
+Generate some new theories (in `config/`), then generate a new dataset (from those theories), and then put them into
 the `data/` folder for the Engineer.

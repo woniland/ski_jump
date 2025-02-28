@@ -9,7 +9,8 @@ You will work on the `src/fit.py` file - take a look there!
 
 We _assume_ the dataset describes a ski jump under the influence of gravity.
 If we can setup a model, which reflects this assumption, and we can fit this model,
-we can be confident that is was a normal ski jump after all.
+we can be confident that it was a normal ski jump after all (and we learned that
+gravity acts on earth).
 
 **Step 1:** Determine the starting velocity and starting angle of the test dataset `data/A-test.txt`.
 
@@ -23,7 +24,7 @@ Check that the model parameters of `data/A-test.txt` match to `config/A-test.jso
 
 ### Plotting
 
-Next, we want to check if the fit actually makes sense.
+Next, we want to visually check if the fit actually makes sense.
 
 **Step 2:** Plot the data and your fit into one diagram.
 

@@ -10,6 +10,10 @@ EARTH_GRAVITY = 9.81
 
 
 @dataclass(frozen=True)
+# ↑ this is the `dataclass` decorator, whose documentation can be found
+# here: https://docs.python.org/3/library/dataclasses.html#dataclasses.dataclass .
+# Data class are a convenient way to define a class, which mainly
+# just holds some attributes.
 class Hill:
     """The hill from which the jumpers fly off.
     
@@ -57,6 +61,10 @@ class SkiJump:
         raise NotImplementedError()
 
     @classmethod
+    # ↑ this is the `classmethod` decorator, whose documentation can be found
+    # here: https://docs.python.org/3/library/functions.html#classmethod .
+    # Class methods can be often used as alternative constructors, as the `cls` argument here points
+    # to the class (in this case `SkiJump`) itself.
     def from_json_file(cls, path: pathlib.Path):
         """Read configuration from JSON file."""
         # Work here in Step 1!

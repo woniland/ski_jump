@@ -4,15 +4,15 @@ Your main task will be to organize the repository.
 
 ### Pull Requests and Issues
 
-Make sure that all three teams use Pull Request to implement new features and that a suitable reviewer is assigned.
-For every Pull Request check that the contribution
-- makes sense, i.e. is physically correct
-- does not contain trivial typos
-- is sufficiently documented
+Make sure that all three groups use Pull Request to implement new features and that a suitable reviewer is assigned.
+For every Pull Request check that the contributions
+- make sense, i.e. they are physically correct
+- do not contain trivial typos
+- are sufficiently documented
 
 **Step 1:** Open three Issues to track the status of the three groups in Exercise A.
 
-It often makes sense to annotate the respective Pull Request behind a completed task,
+It often makes sense to annotate the respective Pull Request or commit behind a completed task,
 e.g. `- [ ] task 1` -> `- [x] task 1 #123`.
 
 #### CEO Issue
@@ -85,7 +85,7 @@ which `git` provides and specifically there is a convenient python library for p
 should include (at least) the standard white-space hooks and `black`.
 
 Implement this feature through a Pull Request and tell your collaborators this way what they should do and how they can activate
-it on their machines.
+it on their machines. Run `black` on the existing code already.
 
 ### GitHub Actions
 

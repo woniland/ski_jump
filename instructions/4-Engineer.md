@@ -22,10 +22,10 @@ Check that the model parameters of `data/B-test.txt` match to `config/B-test.jso
 - Adjust the representation of the data points
 - Give the goodness-of-fit $\chi^2$ in the plot
 
-**Step 3:** Provide an advanced plot including the underlying law.
+**Step 3:** Provide an advanced plot which includes the underlying law.
 
-Add a new type of plot on which you include the underlying theory (and maybe its parameters) in addition
-to the data and your fit. Find a meaningful sorting in the drawing order.
+Add a new type of plot where you can include the underlying theory (and maybe its parameters) in addition
+to the data and your fit (if the theory is known). Find a meaningful sorting in the drawing order.
 
 ### Command Line Interface
 

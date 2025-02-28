@@ -6,22 +6,22 @@ The captain (and only them) need to execute the following steps:
  
 1. Create a new repository in GitHub under your account.
    Choose a meaningful name and description, else you can keep the repository completely empty - we will import some content next.
-1. Clone the template repository: `git clone https://github.com/felixhekhorn/topi-git-template.git`
-1. Change the origin (i.e. the source of truth) of the repository to your personal repo: `git remote set-url --all origin https://github.com/<your-account>/<your-repo>.git`
-1. Push the current state to _your_ repository: `git push`
-1. Add the other team members as Collaborators in GitHub to your repo: Security -> Collaborators -> "Add people"
+1. Clone the template repository: `$ git clone https://github.com/felixhekhorn/topi-git-template.git`
+1. Change the origin (i.e. the source of truth) of the repository to your personal repo: `$ git remote set-url --all origin https://github.com/<your-account>/<your-repo>.git`
+1. Push the current state to _your_ repository: `$ git push`
+1. Add the other team members as Collaborators in GitHub to your repo: Security -> Collaborators -> Add people
 
 Then everybody needs to clone _your_ repository.
 
-When a group implements a new feature always create a new branch, e.g. via `git switch -c my-new-branch`.
+When a group implements a new feature always create a new branch, e.g. via `$ git switch -c my-new-branch`.
 Remember that there will be three groups changing the repository in parallel - you can solve this by using branches.
 Don't put too many changes into a single branch, before asking to merge it to the main branch.
 Try to make one consistent change, adding one specific new feature into one branch.
-When you believe your feature is ready, create a Pull Request and ask for a review by the CEO
-(and the CEO should ask to one or both other groups for their Pull Requests).
+When you believe your feature is ready, create a Pull Request and ask for a review by the CEO group
+(and the CEO group should ask to one or both other groups for their Pull Requests respectively).
 
-Before you start to develop Python code, make a new virtual environment, e.g. with `python -m venv env`.
-Next, you need to activate the new environment via `. env/bin/activate`.
+Before you start to develop Python code, make a new virtual environment, e.g. with `$ python -m venv env`.
+Next, you need to activate the new environment via `$ . env/bin/activate`.
 This new environment makes the development independent from the host system, gives full control over
 program versions and better reproducibility.
-Indeed, then next in line we can install the necessary third-party libraries using `pip install -r requirements.txt`
+Indeed, then next in line we can install the necessary third-party libraries using `$ pip install -r requirements.txt`

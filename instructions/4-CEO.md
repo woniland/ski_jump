@@ -2,7 +2,7 @@
 
 ### Issues
 
-**Step 1:** Open three Issues to track the status of the three groups in Exercise A.
+**Step 1:** Open three Issues to track the status of the three groups in Exercise B.
 
 #### CEO Issue
 
@@ -33,9 +33,9 @@ Title: `B/Engineer`
 Assignees: the Engineer group
 Description:
 ```
-- [ ] Updated fit
-- [ ] Updated plot
-- [ ] Extended plot
+- [ ] Update fit
+- [ ] Update plot
+- [ ] Extended plot is available
 - [ ] CLI is available
 ```
 
@@ -66,7 +66,7 @@ Double-check the work of the Programmer and the Engineer from Exercise A: i.e.
 **Step 3:** Update the main Readme of the repository to something more meaningful
 
 This can, e.g., include
-- what it is about,
+- what the repository is about,
 - implemented features,
 - badges are very popular, e.g. [for Workflows](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/monitoring-workflows/adding-a-workflow-status-badge),
 - ...
@@ -74,12 +74,12 @@ This can, e.g., include
 ### Linting
 
 Another useful tool while developing software are [linters](https://en.wikipedia.org/wiki/Lint_(software)).
-They perform a static code analysis and can find trivial bugs, e.g. valid variable names and correct scopes,
+They perform a static code analysis and can this way find trivial bugs, e.g. invalid variable names and incorrect scopes,
 or avoid duplication. The most popular tool in Python is [pylint](https://www.pylint.org/).
 
 **Step 4:** Add `pylint` to the tool stack
 
 This includes:
-- installing it
+- installing it (remember the `requirements.txt` file!)
 - running it and fixing possible errors
 - add it to the CI
