@@ -16,33 +16,28 @@ EARTH_GRAVITY = 9.81
 # just holds some attributes.
 class Hill:
     """The hill from which the jumpers fly off.
-    
-    The hill is located between 0 and `x_max`.
 
     .. code::
-
+            ^
+            --------------> x
             |
             |     <- offset
             |\
             | \
             |  \
-            --------------> x
-                ^ x_max
     """
 
     offset: float
     """Vertical offset of slope - should be negative."""
     slope: float
     """Slope of the hill - should be negative."""
-    x_max: float
-    """Maximum extension of the hill - should be positive."""
 
     def y(self, x: float) -> float:
         """Returns shape of the hill."""
         return self.offset + self.slope * x
 
 
-HILL = Hill(offset=-2.0, slope=-1.0, x_max=10.0)
+HILL = Hill(offset=-2.0, slope=-1.0)
 """The present hill."""
 
 

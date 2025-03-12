@@ -14,7 +14,7 @@ class TestHill:
         """Check slope"""
         # this is an already working example:
         # We create a fixed configuration ...
-        hill = Hill(offset=-1.0, slope=-1.0, x_max=10.0)
+        hill = Hill(offset=-1.0, slope=-1.0)
         # ... and then check it is working as intended
         # Recall that testing float numbers is actually complicated (why?) and for that purpose Numpy is
         # providing a set of handy functions in numpy.testing -
