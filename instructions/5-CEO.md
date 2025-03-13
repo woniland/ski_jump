@@ -4,6 +4,8 @@
 
 **Step 1:** Open Issues for the various groups if you think that was useful.
 
+Check the respective group instruction pages for possible items.
+
 ### Packaging
 
 Python provides an easy way to bundle and distribute libraries and also associated scripts:
@@ -20,12 +22,13 @@ Read the online documentation on how to create this file: https://packaging.pyth
 
 By convention the source files of the package are in `src/<your-package>/`, i.e. you should move the current files
 in `src/` one directory down with the name that you choose for your package.
+The same applies to the unit tests in the `tests/` directory: move them one down.
 
 You can read more about the general idea of packaging online: https://packaging.python.org/en/latest/tutorials/packaging-projects/
 
 ### Documentation
 
-This step requires the documentation, which is on the menu of the Programmer in exercise C already to be available - if
+This step requires the documentation, which is on the menu of the Programmer in exercise C, already to be available - if
 it isn't help with that first.
 
 The documentation defines your interaction with the outside world and many Python packages provide their
