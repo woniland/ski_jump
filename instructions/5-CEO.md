@@ -22,3 +22,19 @@ By convention the source files of the package are in `src/<your-package>/`, i.e.
 in `src/` one directory down with the name that you choose for your package.
 
 You can read more about the general idea of packaging online: https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+### Documentation
+
+This step requires the documentation, which is on the menu of the Programmer in exercise C already to be available - if
+it isn't help with that first.
+
+The documentation defines your interaction with the outside world and many Python packages provide their
+documentation via [readthedoc](https://about.readthedocs.com/).
+Since we are not developing a proper Python package, but only some demo package we can opt for the second most
+popular solution: hosting the documentation via [GitHub Pages](https://pages.github.com/).
+
+**Step 3:** Expose your documentation via GitHub Pages.
+
+There are several ways to do this, but the basic idea is:
+1. you need to build the documentation using [Sphinx](https://www.sphinx-doc.org/en/master/)
+1. you need to expose the generated HTML files to GitHub Pages

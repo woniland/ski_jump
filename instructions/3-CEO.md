@@ -14,6 +14,7 @@ For every Pull Request check that the contributions
 
 It often makes sense to annotate the respective Pull Request or commit behind a completed task,
 e.g. `- [ ] task 1` -> `- [x] task 1 #123`.
+Make sure to understand what a specific item is about and ask for clarification if necessary.
 
 #### CEO Issue
 
