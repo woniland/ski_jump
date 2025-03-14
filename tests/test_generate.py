@@ -3,6 +3,7 @@ import sys
 import numpy as np
 import pytest
 
+# ↓ when you have a proper package in exercise C, replace this hack
 sys.path.append("src/")
 from generate import Hill, SkiJump
 

@@ -5,8 +5,9 @@ from dataclasses import dataclass
 import pathlib
 import numpy as np
 
-EARTH_GRAVITY = 9.81
+EARTH_GRAVITY = 1.0  # [a.u.]
 """Acceleration on earth due to gravity."""
+# ↑ for simplicity we use arbitrary units every where - how to restore SI units?
 
 
 @dataclass(frozen=True)
