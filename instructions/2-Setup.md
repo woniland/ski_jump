@@ -17,7 +17,7 @@ The captain (and only them) need to execute the following steps:
 
 Then everybody needs to clone _the Captain's_ repository: `$ git clone https://github.com/<captain-account>/<captain-repo>.git`
 
-### Use branches and Pull Requests
+### Branches and Pull Requests
 
 When a group implements a new feature always create a new branch, e.g. via `$ git switch -c my-new-branch`.
 Remember that there will be three groups changing the repository in parallel - you can solve this by using branches.
@@ -26,9 +26,18 @@ Try to make one consistent change, e.g. adding one specific new feature, into on
 When you believe your feature is ready, create a Pull Request and ask for a review by the CEO group
 (and the CEO group should ask to one or both other groups for their Pull Requests respectively).
 
-Maybe add an intentional bug in your first Pull Request, to check if the Reviewer is actually doing
+Maybe add one intentional bug in your first Pull Request, to check if the Reviewer is actually doing
 its job. One time is sufficient, because the material is complex enough that there will be
-unintentional bugs around :see_no_evil: .
+unintentional bugs around anyways :see_no_evil: .
+
+Please write always concise, clear and descriptive commit messages - this will help you a lot,
+see [this blogpost](https://cbea.ms/git-commit/) for a good reasoning.
+
+Joining two different branches is called [merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+and when working with others on a common code basis, there will be situations where different branches want to
+make incompatible changes. They are referred to as Merge Conflicts and you will need to address them before the actual
+merge to take place, i.e. before you can merge a Pull Request. Often you need to decide on a case-by-case basis
+if you want to keep the changes from branch A or from branch B or a mixture of the two.
 
 ### Python setup
 

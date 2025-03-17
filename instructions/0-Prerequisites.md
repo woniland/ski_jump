@@ -7,6 +7,7 @@ We will be using two main programs, which may be already familiar to some of you
 - Documentation: https://git-scm.com/doc
 - The official tutorial can be found under https://git-scm.com/docs/gittutorial - or doing a simple search in your favorite search engine
 - To get started just type `git` and if you want to know more about a specific command, e.g. `$ git commit`, just type `$ git help commit`
+- The most important git commands and the typical order in which they are executed, can also be found [in the slides](../slides/topi.pdf)
 
 While `git` is the actual program, which is doing all the heavy lifting, we will use [GitHub](https://github.com/)
 as the online interface to collaborate together. GitHub is one popular choice out of many, which can host online repositories.
