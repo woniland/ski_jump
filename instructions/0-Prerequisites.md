@@ -26,5 +26,6 @@ Note that we will work only with version 2 - you can check your version with `$ 
 - Documentation: https://docs.python.org/3/
 - The official tutorial can be found under https://docs.python.org/3/tutorial/index.html - or doing a simple search in your favorite search engine
 - To get started just type `python` to open a Python shell
+- Remember that the python executable might be called `python3` on some systems
 
 Note that we will work only with version 3 (preferably >= 3.9) - you can check your version with `$ python --version`.
