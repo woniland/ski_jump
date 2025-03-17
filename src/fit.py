@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.optimize import curve_fit
 
+# We need earth gravity to determine the initial velocity and initial angle
+from generate import EARTH_GRAVITY
+
 # Step 1: Determine the starting velocity and starting angle of the test dataset `data/A-test.txt`.
 
 ## 1. Load data file using https://numpy.org/doc/stable/reference/generated/numpy.loadtxt.html#numpy-loadtxt .
@@ -23,5 +26,6 @@ from scipy.optimize import curve_fit
 ## A Quick start example can be found here: https://matplotlib.org/stable/users/explain/quick_start.html
 ## A list with tutorials can be found here: https://matplotlib.org/stable/tutorials/index.html
 ## - Save the final plot in the `plots/` directory as `.pdf`
+##   The relevant command is described here: https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.savefig.html#matplotlib.figure.Figure.savefig
 ## - Note it is often convenient to not commit generated files to repositories, but their recipe instead!
-##   (That is why there is a `.gitignore` file in the folder.)
+##   (That is why there is a `.gitignore` file in the `plots/` folder.)

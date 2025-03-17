@@ -18,6 +18,7 @@ The implementation strategy will be following closely the strategy in [Exercise 
 **Step 1:** Implement the new model.
 
 Since we introduced a new model parameter, $\tau$, we need to
+
 1. add the parameter to our generator class `SkiJump`
 1. adjust `read_from_json`
 1. we can assume that if the variable is not defined in the config, it is 0 - this way the code will be backward compatible

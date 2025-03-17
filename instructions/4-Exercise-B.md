@@ -7,6 +7,7 @@ Specifically, we will assume that all uncertainties are purely Gaussian (i.e. dr
 and uncorrelated.
 
 The different groups have different tasks, which are discussed on the respective pages:
+
 1. [CEO](./4-CEO.md)
 1. [Programmer](./4-Programmer.md)
 1. [Engineer](./4-Engineer.md)

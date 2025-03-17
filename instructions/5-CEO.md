@@ -12,7 +12,7 @@ Python provides an easy way to bundle and distribute libraries and also associat
 building actual Python packages.
 
 First, you should turn the `src/` folder into an actual module by adding an empty file
-called `__init__.py`. 
+called `__init__.py`.
 To learn more about modules you can read, e.g., [the online documentation](https://docs.python.org/3/tutorial/modules.html).
 
 Next, we want to setup the Python package: this can be achieved by writing a `pyproject.toml` file.
@@ -39,5 +39,6 @@ popular solution: hosting the documentation via [GitHub Pages](https://pages.git
 **Step 3:** Expose your documentation via GitHub Pages.
 
 There are several ways to do this, but the basic idea is:
+
 1. you need to build the documentation using [Sphinx](https://www.sphinx-doc.org/en/master/)
 1. you need to expose the generated HTML files to GitHub Pages

@@ -8,7 +8,7 @@ In our simple case here `curve_fit` also provides us in addition with an uncerta
 on those model parameter, but how about more complicated case?
 
 Actually, we can go one step further by applying the Monte Carlo replica method
-(see e.g. [JHEP 12 (2024) 064](https://doi.org/10.1007/JHEP12(2024)064) and reference there in for a more
+(see e.g. [JHEP 12 (2024) 064](<https://doi.org/10.1007/JHEP12(2024)064>) and reference there in for a more
 detailed discussion).
 The idea is that we can consider the data that we have just as
 _one particular measurement out of many possible_. The central value is still the most likely true value
@@ -45,7 +45,7 @@ the pseudodata generation (as long as they are faithfully estimated).
 
 **Step 1:** Define a MC sampler class
 
-The class could, e.g., look  similar to this:
+The class could, e.g., look similar to this:
 
 ```py
 class MCSampler:

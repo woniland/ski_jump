@@ -5,21 +5,22 @@ You need your own version of this repository, where you can actually change the 
 ### git setup for the Captain
 
 The captain (and only them) need to execute the following steps:
- 
+
 1. Create a new repository in GitHub under your account.
    Choose a meaningful name and description, else you can keep the repository completely empty - we will import some content next.
 1. Clone the template repository: `$ git clone https://github.com/felixhekhorn/topi-git-template.git`
-1. Change the origin (i.e. the source of truth) of the repository to your personal repo: `$ git remote set-url --all origin https://github.com/<your-account>/<your-repo>.git`
+1. Change the origin (i.e. the source of truth) of the repository to your personal repo: `$ git remote set-url origin git@github.com:<your-account>/<your-repo>.git`
 1. Push the current state to _your_ repository: `$ git push`
 1. Add the other team members as Collaborators in GitHub to your repo: Security -> Collaborators -> Add people
 
 ### git setup for the others
 
-Then everybody needs to clone _the Captain's_ repository: `$ git clone https://github.com/<captain-account>/<captain-repo>.git`
+Then everybody needs to clone _the Captain's_ repository: `$ git clone git@github.com:<captain-account>/<captain-repo>.git`
 
 ### Branches and Pull Requests
 
 When a group implements a new feature always create a new branch, e.g. via `$ git switch -c my-new-branch`.
+Please use a sensible branch name in real life.
 Remember that there will be three groups changing the repository in parallel - you can solve this by using branches.
 Don't put too many changes into a single branch, before asking to merge it to the main branch.
 Try to make one consistent change, e.g. adding one specific new feature, into one branch.
@@ -43,6 +44,9 @@ if you want to keep the changes from branch A or from branch B or a mixture of t
 
 1. Before you start to develop Python code, make a new virtual environment, e.g. with `$ python -m venv env`.
    This will create a folder `env/` where the actual environment is hosted.
+   Create the environment in the base directory of the repository.
+   The environment will be not tracked by `git` (since it is machine dependent) and so is not bound to a
+   specific branch.
 1. Next, you need to activate the new environment via `$ . env/bin/activate`.
    This new environment makes the development independent from the host system, gives full control over
    library versions and better reproducibility.

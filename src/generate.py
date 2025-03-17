@@ -56,14 +56,15 @@ class SkiJump:
         # Work here in Step 1!
         raise NotImplementedError()
 
-    @classmethod
-    # ↑ this is the `classmethod` decorator, whose documentation can be found
-    # here: https://docs.python.org/3/library/functions.html#classmethod .
-    # Class methods can be often used as alternative constructors, as the `cls` argument here points
-    # to the class (in this case `SkiJump`) itself.
-    def from_json_file(cls, path: pathlib.Path):
+    @staticmethod
+    # ↑ this is the `staticmethod` decorator, whose documentation can be found
+    # here: https://docs.python.org/3/library/functions.html#staticmethod .
+    # This makes the method bound to the class _itself_, rather then to a specific
+    # object.
+    def from_json_file(path: pathlib.Path):
         """Read configuration from JSON file."""
         # Work here in Step 1!
+        # Create a `SkiJump` object with the specification given in the file
         raise NotImplementedError()
 
     def landing(self, hill: Hill) -> float:

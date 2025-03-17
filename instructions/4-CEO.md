@@ -9,6 +9,7 @@
 Title: `B/CEO`
 Assignees: the CEO group
 Description:
+
 ```
 - [ ] open all issues for exercise B
 - [ ] exercise A is correct
@@ -21,6 +22,7 @@ Description:
 Title: `B/Programmer`
 Assignees: the Programmer group
 Description:
+
 ```
 - [ ] Update `SkiJump`
 - [ ] Extend unit tests
@@ -32,6 +34,7 @@ Description:
 Title: `B/Engineer`
 Assignees: the Engineer group
 Description:
+
 ```
 - [ ] Update fit
 - [ ] Update plot
@@ -46,6 +49,7 @@ Description:
 #### Internal
 
 Double-check the work of the Programmer and the Engineer from Exercise A: i.e.
+
 - there are several theories in `config/`
 - there are several datasets in `data/`
 - each theory reproduces its matching dataset (i.e. the data generation of the Programmer is correct)
@@ -66,6 +70,7 @@ Double-check the work of the Programmer and the Engineer from Exercise A: i.e.
 **Step 3:** Update the main Readme of the repository to something more meaningful
 
 This can, e.g., include
+
 - what the repository is about,
 - implemented features,
 - badges are very popular, e.g. [for Workflows](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/monitoring-workflows/adding-a-workflow-status-badge),
@@ -73,13 +78,14 @@ This can, e.g., include
 
 ### Linting
 
-Another useful tool while developing software are [linters](https://en.wikipedia.org/wiki/Lint_(software)).
+Another useful tool while developing software are [linters](<https://en.wikipedia.org/wiki/Lint_(software)>).
 They perform a static code analysis and can this way find trivial bugs, e.g. invalid variable names and incorrect scopes,
 or avoid duplication. The most popular tool in Python is [pylint](https://www.pylint.org/).
 
 **Step 4:** Add `pylint` to the tool stack
 
 This includes:
+
 - installing it (remember the `requirements.txt` file!)
 - running it and fixing possible errors
 - add it to the CI

@@ -21,7 +21,8 @@ the available options and showcase some examples.
 Recall that the documentation defines your interaction with the outside world.
 Maintaining the documentation is thus crucial if you want other people to use your tools.
 
-_Hints:_ 
+_Hints:_
+
 1. Use the `doc/` directory to host your documentation to keep it separated from the actual code
 1. It is common to not commit generated files to the version control system, that is why there is a `.gitignore` file
 

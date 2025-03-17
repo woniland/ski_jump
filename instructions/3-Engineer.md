@@ -5,6 +5,8 @@ by the Programmer.
 
 You will work on the `src/fit.py` file - take a look there!
 
+:octocat: Remember to make a new branches and to commit regularly to them.
+
 ### Fitting
 
 We _assume_ the dataset describes a ski jump under the influence of gravity.
@@ -31,6 +33,8 @@ Next, we want to visually check if the fit actually makes sense.
 _Hint:_ Recall that the data points are just points, but the model is a smooth function.
 
 For a small number of model parameters it often makes sense to print them in the plot.
+
+:octocat: Remember to commit regularly.
 
 ### Code organization
 

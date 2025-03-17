@@ -7,9 +7,10 @@ The implementation strategy will be following closely the strategy in [Exercise 
 **Step 1:** Adjust the fitting procedure.
 
 The new file structure will be:
-1. first column $x$ as before
-1. second column $y$ as before
-1. third column $e$ - the new uncertainty
+
+1. first column $x_j$ as before
+1. second column $y_j$ as before
+1. third column $\sigma_j$ - the new uncertainty
 
 Adjust the call to [scipy.optimize.curve_fit] to account for the uncertainty.
 
@@ -36,5 +37,6 @@ The official tutorial can be found [online](https://docs.python.org/3/howto/argp
 You can also check `src/generate.py` for a simple example.
 
 From the CLI the user should be able to tell
+
 - which dataset he wants to analyze
 - if and which plot he wants (or just text output)

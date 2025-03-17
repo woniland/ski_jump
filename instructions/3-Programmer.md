@@ -18,10 +18,13 @@ You will work on the `src/generate.py` file - take a look there!
 and `SkiJump.landing`.
 
 _Hints:_
+
 - for `SkiJump.y`: it is $y(x) = a*x + b*x^2$ - determine $a,b$ from the
   initial velocity and angle! (Yes, this is a math exercise :books: )
 - for `SkiJump.from_json_file`: use [`json.load`](https://docs.python.org/3/library/json.html#json.load)
 - for `SkiJump.landing`: More math!
+
+:octocat: Remember to make one or several new branches and to commit regularly to them.
 
 We will leave `SkiJump.sample` for step 3.
 
@@ -43,26 +46,42 @@ Take a look to the `tests/test_generate.py` file!
 By convention unit test files start with `test_`and also unit test functions start with `test_`.
 
 Execute the already available unit test via
+
 ```sh
 $ pytest tests/
 ```
 
 **Step 2:** Check your implementation using the available unit tests and write the missing ones.
 
+:octocat: Remember to commit regularly.
+
+:octocat: You should create a Pull Request now (if not already done).
+
 ### Data generation
 
 Finally, we have all tools at hand to write the actual datafile.
 To execute the generation script execute
+
 ```sh
 $ python src/generate.py
 ```
 
+This command will not work out of the box, but it will tell you what you need to run explicitly.
+We fix the underlying code in the next step.
+
+:octocat: You may want to create a new branch which is based on your previous one for these new changes
+(since they are almost independent to the former changes).
+
 **Step 3:** Complete the implementation of `SkiJump.sample` and the dataset generation script in `src/generate.py`.
 
 Check that `config/A-test.json` reproduces `data/A-test.txt` when running
+
 ```sh
 $ python src/generate.py config/A-test.json data/A-test.txt -n 3
 ```
 
 Generate some new theories (in `config/`), then generate a new dataset (from those theories), and then put them into
-the `data/` folder for the Engineer.
+the `data/` folder for the Engineer (using of course new names everywhere).
+
+:octocat: If you made a new branch, remember also to create a new Pull Request (also put the "base branch"
+there to the other branch, such they sit on top of each other)
