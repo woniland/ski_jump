@@ -2,6 +2,15 @@
 
 You need your own version of this repository, where you can actually change the content as much as you like (and which is not bound to me).
 
+### SSH keys in GitHub
+
+In order to work properly with GitHub everybody needs to register their SSH keys there (and this
+way promise that it is actually you working on the code).
+
+Please follow the steps at https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?tool=webui .
+
+Next, we can setup our own repository.
+
 ### git setup for the Captain
 
 The captain (and only them) need to execute the following steps:
@@ -20,8 +29,8 @@ Then everybody needs to clone _the Captain's_ repository: `$ git clone git@githu
 ### Branches and Pull Requests
 
 When a group implements a new feature always create a new branch, e.g. via `$ git switch -c my-new-branch`.
-Please use a sensible branch name in real life.
 Remember that there will be three groups changing the repository in parallel - you can solve this by using branches.
+Please use sensible branch names in real life.
 Don't put too many changes into a single branch, before asking to merge it to the main branch.
 Try to make one consistent change, e.g. adding one specific new feature, into one branch.
 When you believe your feature is ready, create a Pull Request and ask for a review by the CEO group
@@ -31,8 +40,8 @@ Maybe add one intentional bug in your first Pull Request, to check if the Review
 its job. One time is sufficient, because the material is complex enough that there will be
 unintentional bugs around anyways :see_no_evil: .
 
-Please write always concise, clear and descriptive commit messages - this will help you a lot,
-see [this blogpost](https://cbea.ms/git-commit/) for a good reasoning.
+Please write always concise, clear and descriptive commit messages - this will help you a lot.
+See [this blogpost](https://cbea.ms/git-commit/) for a good reasoning.
 
 Joining two different branches is called [merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 and when working with others on a common code basis, there will be situations where different branches want to
