@@ -5,7 +5,7 @@ by the Programmer.
 
 You will work on the `src/fit.py` file - take a look there!
 
-:octocat: Remember to make a new branches and to commit regularly to them.
+:octocat: Remember to make new branches and to commit regularly to them.
 
 ### Fitting
 
