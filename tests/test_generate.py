@@ -1,3 +1,5 @@
+"""Unit tests for data generation."""
+
 import sys
 
 import numpy as np
@@ -36,10 +38,15 @@ class TestSkiJump:
         """Check trajectory."""
         # Work here in Step 2!
         # Adjust the implementation of SkiJump.y such that these test pass.
-        jump = SkiJump(v0=2.2147234590350102, alpha=0.0)
-        np.testing.assert_allclose(jump.y(0.0), 0.0)
-        np.testing.assert_allclose(jump.y(1.0), -1.0)
-        np.testing.assert_allclose(jump.y(2.0), -4.0)
+        # First a "simple" example
+        jump_straight = SkiJump(v0=1.0, alpha=0.0)
+        np.testing.assert_allclose(jump_straight.y(0.0), 0.0)
+        np.testing.assert_allclose(jump_straight.y(1.0), -1.0)
+        np.testing.assert_allclose(jump_straight.y(2.0), -4.0)
+        # Then a "not-so-simple" example
+        jump_up = SkiJump(v0=1.0, alpha=np.pi / 4.0)
+        np.testing.assert_allclose(jump_up.y(0.5), 0.25)
+        np.testing.assert_allclose(jump_up.y(1.0), 0.0)
 
     @pytest.mark.skip(reason="Not implemented yet.")
     def test_from_json_file(self, tmp_path):
@@ -56,7 +63,7 @@ class TestSkiJump:
         file.write_text(f"""{{"alpha": {alpha},"v0": {v0}}}""", encoding="utf-8")
         # now we can use that for our test:
         jump = SkiJump.from_json_file(file)
-        # We can e.g. check that the values got read correctly
+        # We can e.g. check that the values are read correctly
         np.testing.assert_allclose(jump.alpha, alpha)
         np.testing.assert_allclose(jump.v0, v0)
 

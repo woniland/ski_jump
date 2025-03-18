@@ -13,8 +13,10 @@ EARTH_GRAVITY = 1.0  # [a.u.]
 @dataclass(frozen=True)
 # ↑ this is the `dataclass` decorator, whose documentation can be found
 # here: https://docs.python.org/3/library/dataclasses.html#dataclasses.dataclass .
-# Data class are a convenient way to define a class, which mainly
-# just holds some attributes.
+# Data classes are a convenient way to define a class, which mainly
+# just holds some attributes (as is the case here).
+# The only method is fully derived from the attributes and the class has no
+# additional logic.
 class Hill:
     """The hill from which the jumpers fly off.
 
@@ -46,9 +48,9 @@ HILL = Hill(offset=-2.0, slope=-1.0)
 class SkiJump:
     """The true jumping trajectory."""
 
-    v0: float
+    v0: float  # [a.u.]
     """Initial velocity."""
-    alpha: float
+    alpha: float  # [rad]
     """Initial angle."""
 
     def y(self, x: float) -> float:
@@ -64,7 +66,9 @@ class SkiJump:
     def from_json_file(path: pathlib.Path):
         """Read configuration from JSON file."""
         # Work here in Step 1!
-        # Create a `SkiJump` object with the specification given in the file
+        # Create a `SkiJump` object with the specification given in the file.
+        # The `dataclass` decorator adds, e.g., a constructor with keyword arguments,
+        # as is used above for creating the `Hill` object.
         raise NotImplementedError()
 
     def landing(self, hill: Hill) -> float:
