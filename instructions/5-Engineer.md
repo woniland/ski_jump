@@ -3,9 +3,9 @@
 So far we were doing exactly 1 fit to the information, which was given to us.
 The central values are the most likely outcome of the measurement and the uncertainties
 were used in determining this one fit. Of course in this way we got a single
-set of best model parameters.
+set of best model parameters ($a, b$).
 In our simple case here `curve_fit` also provides us in addition with an uncertainty
-on those model parameter, but how about more complicated case?
+on those model parameter, but how about more a complicated case?
 
 Actually, we can go one step further by applying the Monte Carlo replica method
 (see e.g. [JHEP 12 (2024) 064](<https://doi.org/10.1007/JHEP12(2024)064>) and reference there in for a more
@@ -25,7 +25,7 @@ In this way the **ensemble of replicas**, i.e. the collection of all replicas to
 sufficiently many replicas, be again a faithful distribution of the underlying measurement.
 Together they encode the same information, i.e. the central value $y_i$ and its uncertainty $\sigma_i$.
 Keep in mind that a single replica has no statistical meaning (the same way a single toss of the dice does not
-say anything), but only the ensemble of replicas. You can think of a pseudodata replica is a hypothetical
+say anything), but only the ensemble of replicas. You can think of a pseudodata replica as a hypothetical
 new run of the very same measurement.
 
 Now, if we do a fit **to each of the pseudodata replicas in turn** we get also a distribution of the
