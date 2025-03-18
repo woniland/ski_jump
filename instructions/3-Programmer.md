@@ -82,7 +82,7 @@ $ python src/generate.py config/A-test.json data/A-test-new.txt -n 3
 
 you should compare `data/A-test.txt` and `data/A-test-new.txt`.
 
-(:octocat: Advanced question: the above command generates a new file, but recall that we said `git` keeps track of files
+( :octocat: Advanced question: the above command generates a new file, but recall that we said `git` keeps track of files
 and their history. So how can you compare a file across different branches or commits?)
 
 Generate some new theories (in `config/`), then generate a new dataset (from those theories), and then put them into
