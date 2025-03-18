@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.optimize import curve_fit
 
-# We need earth gravity to determine the initial velocity and initial angle
+# We need the value of the earth gravity to determine the initial velocity and initial angle
 from generate import EARTH_GRAVITY
 
 # Step 1: Determine the starting velocity and starting angle of the test dataset `data/A-test.txt`.
@@ -16,8 +16,8 @@ from generate import EARTH_GRAVITY
 
 ## 3. Fit using https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html#curve-fit
 
-## 4. Calculate the initial velocity and initial angle from the model parameter.
-##    (Yes, this is a math exercise ;-) )
+## 4. Calculate the initial velocity and initial angle from the model parameters.
+##    (Yes, this is a math exercise ;-) ) Compare your formulae with the Programmer.
 
 # Step 2: Plot the data and your fit into one diagram.
 
