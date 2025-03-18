@@ -19,7 +19,7 @@ and `SkiJump.landing`.
 
 _Hints:_
 
-- for `SkiJump.y`: it is $y(x) = a*x + b*x^2$ - determine $a,b$ from the
+- for `SkiJump.y`: it is $y(x) = a x + b x^2$ - determine $a,b$ from the
   initial velocity and angle! (Yes, this is a math exercise :books: )
 - for `SkiJump.from_json_file`: use [`json.load`](https://docs.python.org/3/library/json.html#json.load)
 - for `SkiJump.landing`: More math!
