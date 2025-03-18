@@ -55,7 +55,7 @@ $ pytest tests/
 
 :octocat: Remember to commit regularly.
 
-:octocat: You should create a Pull Request now (if not already done).
+:octocat: You should create a Pull Requests for every branch now (if not done already).
 
 ### Data generation
 
@@ -74,11 +74,16 @@ We fix the underlying code in the next step.
 
 **Step 3:** Complete the implementation of `SkiJump.sample` and the dataset generation script in `src/generate.py`.
 
-Check that `config/A-test.json` reproduces `data/A-test.txt` when running
+Check that `config/A-test.json` reproduces `data/A-test.txt`, i.e. when running
 
 ```sh
-$ python src/generate.py config/A-test.json data/A-test.txt -n 3
+$ python src/generate.py config/A-test.json data/A-test-new.txt -n 3
 ```
+
+you should compare `data/A-test.txt` and `data/A-test-new.txt`.
+
+(:octocat: Advanced question: the above command generates a new file, but recall that we said `git` keeps track of files
+and their history. So how can you compare a file across different branches or commits?)
 
 Generate some new theories (in `config/`), then generate a new dataset (from those theories), and then put them into
 the `data/` folder for the Engineer (using of course new names everywhere).
