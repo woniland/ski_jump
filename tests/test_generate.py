@@ -39,7 +39,7 @@ class TestSkiJump:
         # Work here in Step 2!
         # Adjust the implementation of SkiJump.y such that these test pass.
         # First a "simple" example
-        jump_straight = SkiJump(v0=1.0, alpha=0.0)
+        jump_straight = SkiJump(v0=np.sqrt(0.5), alpha=0.0)
         np.testing.assert_allclose(jump_straight.y(0.0), 0.0)
         np.testing.assert_allclose(jump_straight.y(1.0), -1.0)
         np.testing.assert_allclose(jump_straight.y(2.0), -4.0)
